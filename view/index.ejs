@@ -1,0 +1,29 @@
+    <div class="hd">
+        <h1 class="page_title">
+            <a href="#newProject">
+                <span class="scroll">
+                    <span class="zin click">ZIN</span>
+                    <span class="new">EW</span>
+                </span>
+            </a>
+        </h1>
+        <!--<p class="page_desc">为Web开发量身设计</p>-->
+    </div>
+    <div class="bd">
+        <div class="weui_grids">
+        <% [1,2,3,4].forEach(function(i){  %>
+            <div class="weui_grid js_grid leaf">
+                <div class="weui_grid_icon">
+                    <img src="./images/icon_nav_button.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                     工程<%=i%>
+                </p>
+                <div class="wrap">
+                    <a href="javascript:;" class="view fa fa-eye"></a>
+                    <a href="#catalog" class="edit fa fa-pencil"></a>
+                </div>
+            </div>
+        <% }); %>
+        </div>
+    </div>

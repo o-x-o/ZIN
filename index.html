@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>WeUI</title>
+    <script src="./script/LAB.src.js?_ver="></script>
+    <script type="text/javascript">
+        /*发布版本*/
+        var _Version=1||Math.random();
+        
+        /* load main css*/
+        $LAB
+        .css("./style/weui.css")
+        .css("./style/zin.css")
+        .css("./plugin/font-awesome/css/font-awesome.css");
+    </script>
+</head>
+<body ontouchstart>
+
+<div class="container page_container"></div>
+
+    <script type="text/javascript">
+        $LAB
+        .setOptions({AlwaysPreserveOrder:true})
+        .js("./script/jquery-2.1.4.min.js")
+        .js("./script/ejs-front.js")
+        .js("./script/ctrls.js")
+        .js("./script/util.js")
+        .js("./script/zin.js").wait(function(){
+            $(function(){
+
+            });
+        });
+    </script>
+</body>
+</html>

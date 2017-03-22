@@ -31,7 +31,7 @@ var CTRLS={
         pass: function(){
         }
     },
-    
+
     newProject: {
         links:{
             "./plugin/jsTree/jstree.min.js":"js",
@@ -43,22 +43,13 @@ var CTRLS={
                 DO("jsTree",path);
                 $.post("/listFile?path="+path,function(r,s,q){
                     console.log(r);
-                    
+
                 });
             }
         }
     },
 
     catalog: {
-        container: ".jsTree_container",
-        viewdata: {
-
-        },
-        load: function(){
-            $(".jsTree").each(function(){
-                $(this).newTree();
-            });
-        }
     },
 
     jsTree: {
